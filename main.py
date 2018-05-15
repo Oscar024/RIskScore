@@ -1,16 +1,16 @@
 import math
 
-edad =26
-sexo = 0 #mujer
-bmi = 26.1
-sys = 110
-dia = 75
+edad =28
+sexo = 1 #mujer
+bmi = 29.76222
+sys = 123
+dia = 82
 fuma = 0
-padres = 0
+padres = 2
 agedb = edad*dia
 
 
 
-risk = 1-math.exp(-math.exp((math.log(4) - (22.9495 + (-0.1564*edad )+( -0.2029*sexo) + (-0.0339*bmi) + (-0.0593*sys) + (-0.1285*dia) + (-0.1907*fuma) +  (-0.1661*padres) + (0.0016*agedb))/0.8769)))
-risk = risk*100
-print(risk)
+riesgo=1-math.exp(-math.exp((math.log(4) - (22.949536 + (-0.156412*edad )+( -0.202933*sexo) + (-0.033881*bmi) + (-0.05933*sys) + (-0.128468*dia) + (-0.190731*fuma) +  (-0.166121*padres) + (0.001624*agedb)))/0.876925))
+riesgo = riesgo*100
+print(riesgo)
